@@ -41,8 +41,16 @@
 	        	<li class="nav-item"><a href="services.html" class="nav-link">Products</a></li>
 	        	<!--<li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>-->
 	        	<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-	        	<li class="nav-item"><a href="blog.html" class="nav-link">Portfolio</a></li>
-	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+	        	<li class="nav-item"><a href="gallery.html" class="nav-link">Portfolio</a></li>
+			  <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+			  <li class="nav-item dropdown">
+				<a class="dropdown-toggle nav-link" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+				<ul class="dropdown-menu">
+				  <li><a href="#" class="dropdown-item-text">Action</a></li>
+				  <li class="dropdown-divider"></li>
+				  <li><a href="#" class="dropdown-item-text">Another action</a></li>
+				</ul>
+			  </li>
 	        </ul>
 	      </div>
 	    </div>
@@ -669,7 +677,13 @@ $('.next').click(function() {
 $('.pre').click(function() {
     $('.custom1').trigger('prev.owl.carousel');
 })
+$('ul.nav li.dropdown').hover(function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+}, function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+});
 	});
+	
   </script>
   </body>
 </html>

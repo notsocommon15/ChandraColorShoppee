@@ -8189,6 +8189,7 @@ h1, h2, h3, h4, h5,
     z-index: 0; }
     .ftco-navbar-light .navbar-brand:hover, .ftco-navbar-light .navbar-brand:focus {
       color: #fff; }}
+      
       @media (max-width: 380px) {
         .ftco-navbar-light .navbar-brand {
           color: #fff;
@@ -8202,6 +8203,7 @@ h1, h2, h3, h4, h5,
   @media (max-width: 991.98px) {
     .ftco-navbar-light .navbar-nav {
       padding-bottom: 10px; } }
+ 
   .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
     font-size: 16px;
     padding-top: 1.8rem;
@@ -8215,6 +8217,20 @@ h1, h2, h3, h4, h5,
     opacity: 1 !important; }
     .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
       color: #8d6533; }
+      @media (min-width: 991.98px) and (max-width: 1200px) {
+        .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
+              font-size: 16px;
+              padding-top: 1.8rem;
+              padding-bottom: 1.8rem;
+              padding-left: 0.4rem;
+              padding-right: 0.4rem;
+              font-weight: 500;
+              color: #fff;
+              letter-spacing: 1px;
+              text-transform: uppercase;
+              opacity: 1 !important; }
+        .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
+                color: #8d6533; }}
     @media (max-width: 991.98px) {
       .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
         padding-left: 0;
@@ -8773,7 +8789,7 @@ h3.vr {
         background: #ebe8de; }
   .pricing-entry .button {
     position: absolute;
-    bottom: -26px;
+    bottom: 6px;
     left: 0;
     right: 0;
     margin-bottom: 0;
