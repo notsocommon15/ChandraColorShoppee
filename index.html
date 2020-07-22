@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/magnific-popup.css">
 
     <link rel="stylesheet" href="css/aos.css">
-
+	<link rel="stylesheet" href="venobox/venobox.css">
     <link rel="stylesheet" href="css/ionicons.min.css">
 
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
@@ -25,7 +25,19 @@
     
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+	</style>
   </head>
   <body>
 	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
@@ -56,8 +68,54 @@
 	    </div>
 	  </nav>
     <!-- END nav -->
-
-    <section class="hero-wrap js-fullheight" style="background-image: url(http://www.chandracolorshopee.in/wp-content/uploads/2020/05/best-paint-shop-agra.jpg);" data-stellar-background-ratio="0.5">
+	<header class="hero-wrap js-fullheight">
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+		  <ol class="carousel-indicators">
+			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+		  </ol>
+		  <div class="carousel-inner" role="listbox">
+			<!-- Slide One - Set the background image for this slide in the line below -->
+			<div class="carousel-item active" style="background-image: url('images/c1.jpg')">
+				<div class="overlay"></div>
+			  <div class="carousel-caption d-md-block">
+				<span class="subheading slider-text"><h2 class="display-4">CHANDRA COLOR SHOPPEE</h2></span>
+				<p class="lead">One stop painting and wallpaper solution!</p>
+				<p><a href="#" class="btn btn-primary btn-outline-primary px-4 py-2">Get Themes</a></p>
+			  </div>
+			</div>
+			<!-- Slide Two - Set the background image for this slide in the line below -->
+			<div class="carousel-item" style="background-image: url('images/c2.jpg')">
+				<div class="overlay"></div>
+			  <div class="carousel-caption d-md-block">
+				<span class="subheading slider-text"><h2 class="display-4">CHANDRA COLOR SHOPPEE</h2></span>
+				<p class="lead">This is a description for the second slide.</p>
+				<p><a href="#" class="btn btn-primary btn-outline-primary px-4 py-2">Get Themes</a></p>
+			  </div>
+			</div>
+			<!-- Slide Three - Set the background image for this slide in the line below -->
+			<div class="carousel-item" style="background-image: url('images/c3.jpg')">
+				<div class="overlay"></div>
+			  <div class="carousel-caption d-md-block">
+				<span class="subheading slider-text"><h2 class="display-4">CHANDRA COLOR SHOPPEE</h2></span>
+				<p class="lead">This is a description for the third slide.</p>
+				<p><a href="#" class="btn btn-primary btn-outline-primary px-4 py-2">Get Themes</a></p>
+			  </div>
+			</div>
+			<div class="carousel-item" style="background-image: url('images/c4.png')">
+				<div class="overlay"></div>
+			  <div class="carousel-caption d-md-block">
+				<span class="subheading slider-text"><h2 class="display-4">CHANDRA COLOR SHOPPEE</h2></span>
+				<p class="lead">This is a description for the second slide.</p>
+				<p><a href="#" class="btn btn-primary btn-outline-primary px-4 py-2">Get Themes</a></p>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </header>
+    <!--<section class="hero-wrap js-fullheight" style="background-image: url(http://www.chandracolorshopee.in/wp-content/uploads/2020/05/best-paint-shop-agra.jpg);" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
@@ -71,7 +129,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section>-->
 		<!--
 		<section class="ftco-section ftco-no-pt ftco-no-pb">
 			<div class="container-fluid px-0">
@@ -621,6 +679,8 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
+  <script src="isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="venobox/venobox.min.js"></script>
   <script>
 	jQuery(document).ready(function($) {
 	  $('.custom1').owlCarousel({
