@@ -8486,6 +8486,12 @@ h1, h2, h3, h4, h5,
     line-height: 1;
     font-weight: 500;
     color: #fff; }
+    .slider-text h3 {
+      font-size: 2vw;
+      text-transform: uppercase;
+      line-height: 1;
+      font-weight: 500;
+      color: #fff; }
   .slider-text .breadcrumbs {
     font-size: 16px;
     margin-bottom: 20px;
@@ -8512,6 +8518,7 @@ h1, h2, h3, h4, h5,
 .img-2 {
   width: 100%;
   position: relative; }
+  
   @media (max-width: 767.98px) {
     .img-2 {
       height: 300px;
