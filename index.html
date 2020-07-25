@@ -36,7 +36,115 @@
   -o-background-size: cover;
   background-size: cover;
 }
+.services .box {
+	background-color:#333333;
+	overflow:hidden;
+	transition: .3s ease;
+}
+.services .box i {
+	color:#f26c4f;
+	transition:inherit;
+	transition-delay: 0s
+}
+.services h4 {
+	color:#fff;
+	transition:inherit;
+	transition-delay: .05s;
+}
+.services p {
+	color: gray;
+	transition:inherit;
+	transition-delay: .1s;
+}
+.readmore {
+	color:#fff;
+	overflow: hidden;
+    display: inline-block;
+    font-size: .75rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    position: relative;
+    padding-right: 2rem;
+}
+.readmore:before {
+	animation: ts-link-arrow-effect-animation-out;
+    animation-fill-mode: forwards;
+    animation-duration: .4s;
+    animation-timing-function: cubic-bezier(.6, .01, 0, 1);
+    background-color: #8d6533;
+    bottom: 0;
+    height: .125rem;
+    margin: auto;
+    left: 0;
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    transform: scaleX(.2);
+    transform-origin: left center;
+    z-index: 0;
+}
+.readmore span {
+	position: relative;
+    transform: translateX(-200%);
+    display: inline-block;
+    transition: .6s cubic-bezier(.6, .01, 0, 1);
+}
+.box:hover .readmore span {
+    transform: translateX(0%);
+}
+.box:hover .readmore:before {
+	animation: ts-link-arrow-effect-animation-in;
+    animation-fill-mode: forwards;
+    animation-duration: .4s;
+    animation-timing-function: cubic-bezier(.6, .01, 0, 1);
+}
+.box:hover i,
+.box:hover h4,
+.box:hover p {
+    transform: translateY(-0.625rem);
+}
+@keyframes ts-link-arrow-effect-animation-out {
+    0% {
+        transform-origin: right center;
+        transform: scaleX(.2);
+    }
 
+    70% {
+        transform-origin: right center;
+    }
+
+    71% {
+        transform-origin: left center;
+        transform: scaleX(1);
+    }
+
+    100% {
+        transform-origin: left center;
+        transform: scaleX(.2);
+    }
+}
+@keyframes ts-link-arrow-effect-animation-in {
+    0% {
+        transform-origin: left center;
+        transform: scaleX(.2);
+    }
+
+    70% {
+        transform-origin: left center;
+        transform: scaleX(1);
+    }
+
+    71% {
+        transform-origin: right center;
+    }
+
+    100% {
+        transform-origin: right center;
+        transform: scaleX(.2);
+    }
+}
 	</style>
   </head>
   <body>
@@ -212,7 +320,69 @@
 		  </div>
         </div>
       </div>
-    </section>
+	</section>
+	<section class="services bg-light">
+		<div class="container">
+			<div class="row justify-content-center pb-3">
+				<div class="col-md-10 heading-section text-center ftco-animate">
+					<span class="subheading">Features</span>
+				  <h2 class="mb-4">Why Choose Us?</h2>
+				  <p>We offer safe painting services in light of COVID-19. All our painters and contractors go through temperature checks daily and are advised to stay at home if they feel unwell. </p>
+				</div>
+			  </div>
+			<div class="row">
+				<div class="col-md-6 col-lg-4 mb-3">
+					<div class="box p-5 team"> 
+						<i class="fas fa-mouse fa-3x mb-4"></i>
+						<h2>Fresh Painting</h2>
+						<p>We offer safe painting services in light of COVID-19. All our painters and contractors go through temperature checks daily and are advised to stay at home if they feel unwell. </p>
+						<a class="readmore" href="#"><span>Read More</span></a>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4 mb-3">
+					<div class="box p-5 team"> 
+						<i class="fas fa-camera-retro fa-3x mb-4"></i>
+						<h2>Repainting</h2>
+						<p>Getting bored of the same old colours? We’ve got just the colours you need to rejuvenate the house and make your home, a happy place. Don’t waste your time thinking and contact us right away.</p>
+						<a class="readmore" href="#"><span>Read More</span></a>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4 mb-3">
+					<div class="box p-5 team"> 
+						<i class="fab fa-youtube  fa-3x mb-4"></i>
+						<h2>Video Editing</h2>
+						<p>Duis molestie enim mattis gravida viverra. Fusce ut eros augue. Sed id mauris vel neque</p>
+						<a class="readmore" href="#"><span>Read More</span></a>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4 mb-3">
+					<div class="box p-5 team"> 
+						<i class="fas fa-pencil-alt fa-3x mb-4"></i>
+						<h2>Writing</h2>
+						<p>Duis molestie enim mattis gravida viverra. Fusce ut eros augue. Sed id mauris vel neque</p>
+						<a class="readmore" href="#"><span>Read More</span></a>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4 mb-3">
+					<div class="box p-5 team"> 
+						<i class="fas fa-laptop-code fa-3x mb-4"></i>
+						<h2>Coding</h2>
+						<p>Duis molestie enim mattis gravida viverra. Fusce ut eros augue. Sed id mauris vel neque</p>
+						<a class="readmore" href="#"><span>Read More</span></a>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4 mb-3">
+					<div class="box p-5 team"> 
+						<i class="fas fa-mobile-alt fa-3x mb-4"></i>
+						<h2>App Developing</h2>
+						<p>Duis molestie enim mattis gravida viverra. Fusce ut eros augue. Sed id mauris vel neque</p>
+						<a class="readmore" href="#"><span>Read More</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
 
 	<section class="testimony-section bg-light">
 		<div class="container">
@@ -303,16 +473,6 @@
 			              <input type="text" class="form-control" id="appointment_email" placeholder="Email">
 			            </div>
 	              </div>
-	              <!--<div class="col-sm-6">
-	                <div class="form-group">
-	                  <input type="text" class="form-control appointment_date" placeholder="Date">
-	                </div>    
-	              </div>
-	              <div class="col-sm-6">
-	                <div class="form-group">
-	                  <input type="text" class="form-control appointment_time" placeholder="Time">
-	                </div>
-	              </div>-->
 	              <div class="col-sm-6">
 	                <div class="form-group">
 			              <div class="select-wrap">
@@ -352,38 +512,15 @@
 		
     <footer class="ftco-footer ftco-section">
       <div class="container">
-        <div class="row mb-5">
+        <div class="row mb-3">
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2 logo">Chandra Color Shoppee</h2>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+              <p>The best paint shop in Agra is now available from the comfort of your homes. Feel free to reach out on our social media platforms</p>
               <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-facebook-square"></span></a></li>
                 <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
                 <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4 ml-md-5">
-              <h2 class="ftco-heading-2">Information</h2>
-              <ul class="list-unstyled">
-                <li><a href="#" class="py-2 d-block">FAQs</a></li>
-                <li><a href="#" class="py-2 d-block">Privacy</a></li>
-                <li><a href="#" class="py-2 d-block">Terms Condition</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Links</h2>
-              <ul class="list-unstyled">
-                <li><a href="#" class="py-2 d-block">Home</a></li>
-                <li><a href="#" class="py-2 d-block">About</a></li>
-                <li><a href="#" class="py-2 d-block">Services</a></li>
-                <li><a href="#" class="py-2 d-block">Work</a></li>
-                <li><a href="#" class="py-2 d-block">Blog</a></li>
-                <li><a href="#" class="py-2 d-block">Contact</a></li>
               </ul>
             </div>
           </div>
@@ -405,7 +542,7 @@
           <div class="col-md-12 text-center">
 
             <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script>| <a>Chandra Color Shoppee</a>
   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
           </div>
         </div>
