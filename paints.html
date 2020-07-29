@@ -26,6 +26,54 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+      .carousel-item img{
+	width: 100%;
+}
+@media (min-width: 1100px){
+	.carousel-item img{
+		height: 100vh;
+	}
+  }
+  .carousel-caption {
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+      z-index: 1;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      color: #fff;
+       }
+       .ftco-team{
+         padding: 3em 0 7em 0;
+       }
+       .slider-text{
+         position: relative;
+         height: 0%;
+       }
+       @media (max-width: 991.98px)
+       {
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    left: 15%;
+    top: unset;
+    z-index: 1;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+       }
+       .slider-text h2 {
+    font-size: 7vw;
+    text-transform: uppercase;
+    line-height: 1;
+    font-weight: 700;
+    font-family: "Barlow Condensed", sans-serif;
+    color: #fff; }
+    </style>
   </head>
   <body>
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
@@ -56,8 +104,21 @@
 	    </div>
 	  </nav>
     <!-- END nav -->
-
-    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/texture.png');" data-stellar-background-ratio="0.5">
+    <header class="hero-wrap">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+        
+        <div class="carousel-item text-center active">
+        <img class="d-block w-100" src="images/texture.png" alt="Los Angeles">
+        <div class="carousel-caption text-center d-md-block">
+        <div class="container-fluid px-md-5">
+          <div class="row justify-content-center pb-3"><span class="subheading slider-text"><h2 class="display-4">Paints & Textures</h2></span></div></div>
+        </div>
+        </div>
+        </div>
+      </div>
+      </header>
+    <!--<section class="hero-wrap hero-wrap-2" style="background-image: url('images/texture.png');" data-stellar-background-ratio="0.5">
       <div class="overlay3"></div>
       <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center">
@@ -67,13 +128,13 @@
           </div>
         </div>
       </div>
-    </section>
+    </section>-->
     
     <section class="ftco-section ftco-team">
     	<div class="container-fluid px-md-5">
     		<div class="row justify-content-center pb-3">
           <div class="col-md-10 heading-section text-center ftco-animate">
-          	<span class="subheading">Collection of Paints & Textures</span>
+            <p class="breadcrumbs" style="font-weight:500;text-transform: uppercase;"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-round-forward"></i></a></span> <span class="mr-2"><a href="services.html">Products <i class="ion-ios-arrow-round-forward"></i></a></span> <span>Paints & Textures</span></p>
             <h2 class="mb-4">Paints & Textures</h2>
             <p>With best quality and thousands of colours, choose exactly what you need for your home. Best quality paints available here. Contact us for more.</p>
           </div>
@@ -118,55 +179,6 @@
                   </div>
                 </div>
     </section>
-    <!--<section class="services-section ftco-section">
-      <div class="container">
-      	<div class="row justify-content-center pb-3">
-          <div class="col-md-10 heading-section text-center ftco-animate">
-          	<span class="subheading">Services</span>
-            <h2 class="mb-4">Services Menu</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-          </div>
-        </div>
-        <div class="row no-gutters d-flex">
-          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services d-block text-center">
-              <div class="icon"><span class="flaticon-male-hair-of-head-and-face-shapes"></span></div>
-              <div class="media-body">
-                <h3 class="heading mb-3">Haircut &amp; Styling</h3>
-                <p>A small river named Duden flows by their place and supplies.</p>
-              </div>
-            </div>    
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services d-block text-center">
-              <div class="icon"><span class="flaticon-beard"></span></div>
-              <div class="media-body">
-                <h3 class="heading mb-3">Beard</h3>
-                <p>A small river named Duden flows by their place and supplies.</p>
-              </div>
-            </div>      
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services d-block text-center">
-              <div class="icon"><span class="flaticon-beauty-products"></span></div>
-              <div class="media-body">
-                <h3 class="heading mb-3">Makeup</h3>
-                <p>A small river named Duden flows by their place and supplies.</p>
-              </div>
-            </div>      
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services d-block text-center">
-              <div class="icon"><span class="flaticon-healthy-lifestyle-logo"></span></div>
-              <div class="media-body">
-                <h3 class="heading mb-3">Body Treatment</h3>
-                <p>A small river named Duden flows by their place and supplies.</p>
-              </div>
-            </div>      
-          </div>
-        </div>
-      </div>
-    </section>-->
 
     <section class="ftco-section ftco-booking bg-light" id="contact">
     	<div class="container ftco-relative">
@@ -227,124 +239,48 @@
     		</div>
     	</div>
     </section>
-		
-		<!--<section class="ftco-section ftco-pricing">
-			<div class="container">
-				<div class="row justify-content-center pb-3">
-          <div class="col-md-10 heading-section text-center ftco-animate">
-          	<span class="subheading">Pricing</span>
-            <h2 class="mb-4">Our Prices</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-          </div>
-        </div>
-        <div class="row">
-        	<div class="col-md-3 ftco-animate">
-        		<div class="pricing-entry pb-5 text-center">
-        			<div>
-	        			<h3 class="mb-4">Hair Style</h3>
-	        			<p><span class="price">$50.00</span> <span class="per">/ session</span></p>
-	        		</div>
-        			<ul>
-        				<li>Hair Dryer</li>
-								<li>Hair Coloring</li>
-								<li>Hair Cut</li>
-								<li>Hair Dresser</li>
-								<li>Hair Spa</li>
-        			</ul>
-        			<p class="button text-center"><a href="#" class="btn btn-primary px-4 py-3">Get Offer</a></p>
-        		</div>
-        	</div>
-        	<div class="col-md-3 ftco-animate">
-        		<div class="pricing-entry pb-5 text-center">
-        			<div>
-	        			<h3 class="mb-4">Manicure Pedicure</h3>
-	        			<p><span class="price">$34.50</span> <span class="per">/ session</span></p>
-	        		</div>
-        			<ul>
-        				<li>Manicure</li>
-								<li>Pedicure</li>
-								<li>Coloring</li>
-								<li>Nails</li>
-								<li>Nail Cut</li>
-        			</ul>
-        			<p class="button text-center"><a href="#" class="btn btn-primary px-4 py-3">Get Offer</a></p>
-        		</div>
-        	</div>
-        	<div class="col-md-3 ftco-animate">
-        		<div class="pricing-entry active pb-5 text-center">
-        			<div>
-	        			<h3 class="mb-4">Makeup</h3>
-	        			<p><span class="price">$54.50</span> <span class="per">/ session</span></p>
-	        		</div>
-        			<ul>
-        				<li>Makeup</li>
-								<li>Professional Makeup</li>
-								<li>Blush On</li>
-								<li>Facial Massage</li>
-								<li>Facial Spa</li>
-        			</ul>
-        			<p class="button text-center"><a href="#" class="btn btn-primary px-4 py-3">Get Offer</a></p>
-        		</div>
-        	</div>
-        	<div class="col-md-3 ftco-animate">
-        		<div class="pricing-entry pb-5 text-center">
-        			<div>
-	        			<h3 class="mb-4">Body Treatment</h3>
-	        			<p><span class="price">$89.50</span> <span class="per">/ session</span></p>
-	        		</div>
-        			<ul>
-        				<li>Massage</li>
-								<li>Spa</li>
-								<li>Foot Spa</li>
-								<li>Body Spa</li>
-								<li>Relaxing</li>
-        			</ul>
-        			<p class="button text-center"><a href="#" class="btn btn-primary px-4 py-3">Get Offer</a></p>
-        		</div>
-        	</div>
-        </div>
-			</div>
-		</section>-->
 
 
     <footer class="ftco-footer ftco-section">
-      <div class="container">
-        <div class="row mb-3">
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2 logo">Chandra Color Shoppee</h2>
-              <p>The best paint shop in Agra is now available from the comfort of your homes. Feel free to reach out on our social media platforms</p>
-              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                <li class="ftco-animate"><a href="https://www.facebook.com/groups/559133337892755/?ref=share" target="_blank"><span class="icon-facebook-square"></span></a></li>
-                <li class="ftco-animate"><a href="https://www.facebook.com/chandracolorshoppee/?ti=as" target="_blank"><span class="icon-facebook"></span></a></li>
-                <li class="ftco-animate"><a href="https://instagram.com/chandracolorshoppee?igshid=l6ivkawqbprq" target="_blank"><span class="icon-instagram"></span></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-            	<h2 class="ftco-heading-2">Have a Question?</h2>
-            	<div class="block-23 mb-3">
-	              <ul>
-	                <li><a href="https://goo.gl/maps/6XnT4iUTCQBuB5yx8"><span class="icon icon-map-marker"></span><span class="text">Chandra Color Shoppee, Near Pashcimpuri Choraha, Shastripuram, Agra</span></a></li>
-	                <li><a href="tel:+91-63995-46064"><span class="icon icon-phone"></span><span class="text">+91-6399546064</span></a></li>
-	                <li><a href="mailto:ccs29612@gmail.com"><span class="icon icon-envelope"></span><span class="text">ccs29612@gmail.com</span></a></li>
-	              </ul>
-	            </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-			<script defer data-key="87d25f7b-4375-4fd4-ad4f-a54c300b36bc" src="https://widget.tochat.be/bundle.js"></script>
-          <div class="col-md-12 text-center">
-
-            <p>
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script>| <a>Chandra Color Shoppee</a>
-</p>
-          </div>
-        </div>
-      </div>
-    </footer>
+			<div class="container">
+			  <div class="row mb-3">
+				<div class="col-md">
+				  <div class="ftco-footer-widget mb-4">
+					<h2 class="ftco-heading-2 logo">Chandra Color Shoppee</h2>
+					<p>The best paint shop in Agra is now available from the comfort of your homes. Feel free to reach out on our social media platforms</p>
+					<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+					  <li class="ftco-animate"><a href="https://www.facebook.com/groups/559133337892755/?ref=share" target="_blank"><span class="icon-facebook-square"></span></a></li>
+					  <li class="ftco-animate"><a href="https://www.facebook.com/chandracolorshoppee/?ti=as" target="_blank"><span class="icon-facebook"></span></a></li>
+					  <li class="ftco-animate"><a href="https://instagram.com/chandracolorshoppee?igshid=l6ivkawqbprq" target="_blank"><span class="icon-instagram"></span></a></li>
+					</ul>
+				  </div>
+				</div>
+				<div class="col-md">
+				  <div class="ftco-footer-widget mb-4">
+					  <h2 class="ftco-heading-2">Have a Question?</h2>
+					  <div class="block-23 mb-3">
+						<ul>
+						  <li><a href="https://goo.gl/maps/6XnT4iUTCQBuB5yx8"><span class="icon icon-map-marker"></span><span class="text">Chandra Color Shoppee, Near Pashcimpuri Choraha, Shastripuram, Agra</span></a></li>
+						  <li><a href="tel:+91-63995-46064"><span class="icon icon-phone"></span><span class="text">+91-6399546064</span></a></li>
+						  <li><a href="mailto:ccs29612@gmail.com"><span class="icon icon-envelope"></span><span class="text">ccs29612@gmail.com</span></a></li>
+						</ul>
+					  </div>
+				  </div>
+				</div>
+			  </div>
+			  <div class="row">
+				  <script defer data-key="87d25f7b-4375-4fd4-ad4f-a54c300b36bc" src="https://widget.tochat.be/bundle.js"></script>
+				<div class="col-md-12 text-center">
+	  
+				  <p>
+		Copyright &copy; <script>document.write(new Date().getFullYear());</script> | <a> Chandra Color Shoppee</a>
+	  </p>
+	  <hr style="background-color:white; height:2px; width: 200px;">
+	  <p>Designed by <a href="https://www.dizibiz.solutions/" target="_blank">Dizibiz Solutions</a> </p>
+				</div>
+			  </div>
+			</div>
+		  </footer>
     
   
 
