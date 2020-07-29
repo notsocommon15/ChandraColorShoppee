@@ -26,6 +26,54 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+      .carousel-item img{
+	width: 100%;
+}
+@media (min-width: 1100px){
+	.carousel-item img{
+		height: 100vh;
+	}
+  }
+  .carousel-caption {
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+      z-index: 1;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      color: #fff;
+       }
+       .ftco-team{
+         padding: 3em 0 7em 0;
+       }
+       .slider-text{
+         position: relative;
+         height: 0%;
+       }
+       @media (max-width: 991.98px)
+       {
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    left: 15%;
+    top: unset;
+    z-index: 1;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+       }
+       .slider-text h2 {
+    font-size: 7vw;
+    text-transform: uppercase;
+    line-height: 1;
+    font-weight: 700;
+    font-family: "Barlow Condensed", sans-serif;
+    color: #fff; }
+    </style>
   </head>
   <body>
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
@@ -56,24 +104,39 @@
 	    </div>
 	  </nav>
     <!-- END nav -->
-
-    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/product.png'); width: 100%;" data-stellar-background-ratio="0.5">
+    <header class="hero-wrap">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+        
+        <div class="carousel-item text-center active">
+          <img class="d-block w-100" src="images/product.png" alt="Los Angeles">
+          <!--<div class="overlay2"></div>-->
+        <div class="carousel-caption text-center d-md-block">
+          <div class="container-fluid px-md-5">
+            <div class="row justify-content-center pb-3"><span class="subheading slider-text"><h2 class="display-4">Products</h2></span></div></div>
+          </div>
+        </div>
+        </div>
+      </div>
+      </header>
+    <!--<section class="hero-wrap" style="background-image: url('images/product.png');" data-stellar-background-ratio="0.2">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center">
           <div class="col-md-9 ftco-animate pb-5 text-center">
             <h2 class="mb-0 bread">Products</h2>
-            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-round-forward"></i></a></span> <span>Products <!--<i class="ion-ios-arrow-round-forward"></i>--></span></p>
+            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-round-forward"></i></a></span> <span>Products</span></p>
           </div>
         </div>
       </div>
-    </section>
+    </section>-->
     
     <section class="ftco-section ftco-team">
     	<div class="container-fluid px-md-5">
     		<div class="row justify-content-center pb-3">
           <div class="col-md-10 heading-section text-center ftco-animate">
-          	<span class="subheading">Products</span>
+            <p class="breadcrumbs" style="font-weight: 500;text-transform: uppercase;"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-round-forward"></i></a></span> <span>Products</span></p>
+          	<!--<span class="subheading">Products</span>-->
             <h2 class="mb-4">Our Collection</h2>
             <p>We provide safe painting solutions to all our customers in light of COVID-19. Our stores are sanitized regularly and all our staff goes through temperature checks regularly.</p>
           </div>
@@ -193,8 +256,10 @@
           <div class="col-md-12 text-center">
 
             <p>
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script>| <a>Chandra Color Shoppee</a>
+  Copyright &copy; <script>document.write(new Date().getFullYear());</script> | <a> Chandra Color Shoppee</a>
 </p>
+<hr style="background-color:white; height:2px; width: 200px;">
+<p>Designed by <a href="https://www.dizibiz.solutions/" target="_blank">Dizibiz Solutions</a> </p>
           </div>
         </div>
       </div>
